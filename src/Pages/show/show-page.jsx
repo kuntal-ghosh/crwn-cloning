@@ -9,7 +9,6 @@ class ShowPage extends Component {
     const { collections } = this.state;
     return (
       <div>
-        <h1>welcome to shoppage</h1>
         {collections.map(({ id, ...otherprops }) => (
           <PreviewCollection key={id} {...otherprops}></PreviewCollection>
         ))}
